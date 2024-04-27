@@ -3,7 +3,7 @@
  > Author: furunze
  > Created Time: Fri Apr 26 16:40:42 2024
  ************************************************************************/
-
+//O(n*logN)
 #include<iostream>
 #include<algorithm>
 #include<cmath>
@@ -45,7 +45,7 @@ void partition1(int arr[],int l,int r,int x){
 void partition2(int arr[],int l,int r,int x){
     int a = l,b = r;
     int i = l;
-    while(i<=b){
+    while(i<=b){ // i<b的时候进入循环
         if(arr[i] == x){
             i++;
         }else if(arr[i] < x){
